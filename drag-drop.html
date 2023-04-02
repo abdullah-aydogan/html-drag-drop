@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stil.css">
+        <script src="script.js"></script>
+        <meta charset="UTF-8"/>
+    </head>
+
+    <body>
+        <p>Resimler ile yazıları doğru eşleştirin</p>
+
+        <div>
+            <img src="kopek.png" draggable="true" ondragstart="tut(event)" id="1">
+        </div>
+
+        <div id="kutu1" ondrop="birak(event)" ondragover="tasinmaDurumu(event)">Köpek</div>
+
+        <div>
+            <img src="balik.png" draggable="true" ondragstart="tut(event)" id="2">
+        </div>
+
+        <div id="kutu3" ondrop="birak(event)" ondragover="tasinmaDurumu(event)">Uğur Böceği</div>
+
+        <div>
+            <img src="ugurbocegi.png" draggable="true" ondragstart="tut(event)" id="3">
+        </div>
+
+        <div id="kutu2" ondrop="birak(event)" ondragover="tasinmaDurumu(event)">Balık</div>
+
+        <p id="sonuc"></p>
+    </body>
+</html>
